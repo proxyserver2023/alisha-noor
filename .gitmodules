@@ -1,3 +1,6 @@
 [submodule "src/frontend"]
 	path = src/frontend
 	url = git@github.com:proxyserver2023/alisha-noor-frontend.git
+[submodule "src/apigw"]
+	path = src/apigw
+	url = git@github.com:proxyserver2023/alisha-noor-apigw.git
