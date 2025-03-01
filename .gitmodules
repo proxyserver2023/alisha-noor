@@ -1,0 +1,3 @@
+[submodule "src/frontend"]
+	path = src/frontend
+	url = git@github.com:proxyserver2023/alisha-noor-frontend.git
