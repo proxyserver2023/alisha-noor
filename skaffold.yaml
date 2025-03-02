@@ -5,8 +5,13 @@ metadata:
 build:
   platforms: ["linux/amd64", "linux/arm64"]
   artifacts:
-    - image: frontend
-      context: src/frontend
+    - image: apigw
+      context: src/apigw
+      docker:
+        buildArgs:
+          SKAFFOLD_GO_GCFLAGS: "all=-N -l"
+          TARGETOS: linux
+          TARGETARCH: amd64
   tagPolicy:
     gitCommit: {}
   local:
